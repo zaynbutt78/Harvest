@@ -20,13 +20,13 @@ const Sidebar: React.FC<sidebarProps> = ({
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="bg-white rounded-3xl my-3 ml-5 mb-2 mx-auto pt-2 px-6 lg:px-0 justify-between lg:justify-center items-center ">
+        <div className="bg-white lg:rounded-3xl lg:my-3 lg:ml-5 mb-2 mx-auto pt-2 px-6 lg:px-0 justify-between lg:justify-center items-center ">
           <div className=" mb-2 mx-auto flex justify-between lg:justify-center items-center ">
             <img
               loading="lazy"
               src={MainLogo}
               alt="main logo"
-              className="w-[160px] lg:w-[239px]"
+              className="w-[200px] lg:w-[239px]"
             />
             <div className="lg:hidden flex justify-center">
               <IoMdClose

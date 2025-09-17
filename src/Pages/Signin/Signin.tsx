@@ -34,15 +34,15 @@ const Signin: React.FC = () => {
 
   return (
     <div className="bg-[var(--color-bg-light-gray)]">
-      <div className="container roumded-24 lg:pt-14 lg:pb-20 py-10 px-2.5 grid grid-cols-2 gap-5  h-screen">
-        <div className="bg-[#1A25AB]  rounded-20 p-12 text-center flex flex-col justify-between items-center text-white h-full">
-          <div>
+      <div className="container roumded-24 lg:pt-14 lg:pb-20 py-10 px-2.5 grid lg:grid-cols-2 grid-cols-1 gap-5  lg:h-screen">
+        <div className="bg-[#1A25AB]  rounded-20 lg:p-12 p-5 text-center flex flex-col justify-between items-center text-white h-full">
+          <div className="lg:mb-0 mb-5">
             <Link to="/">
               <ReactSVG src={HarvestLogo} />
             </Link>
           </div>
           <div>
-            <h3 className="!text-white">HVAC System Management Dashboard</h3>
+            <h3 className="!text-white lg:mb-0 mb-5">HVAC System Management Dashboard</h3>
             <p>
               Sign in to manage system operations, user roles, and
               configurations.
@@ -52,7 +52,7 @@ const Signin: React.FC = () => {
             <p>Authorized personnel only. All activities are monitored.</p>
           </div>
         </div>
-        <div className=" rounded-20 bg-white px-17 h-full flex flex-col justify-center">
+        <div className=" rounded-20 bg-white lg:px-17 px-5 lg:py-0 py-5 h-full flex flex-col justify-center">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 w-full">
             <h2 className="text-center">Sign In</h2>
 

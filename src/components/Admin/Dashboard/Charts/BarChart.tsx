@@ -80,16 +80,16 @@ const BarChart = () => {
 
     return (
         <div className="bg-white p-4 rounded-xl shadow-sm w-full">
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex lg:flex-row flex-col justify-between items-center mb-4">
                 <div className="font-semibold">New Client Added</div>
-                <div className="space-x-2">
+                <div className="lg:space-x-2 overflow-x-auto">
                     {timeFilters.map((filter) => (
                         <button
                             key={filter}
                             onClick={() => setSelectedFilter(filter)}
                             className={`text-sm px-4 py-2.5 rounded-8 font-regular transition hover:cursor-pointer ${selectedFilter === filter
                                     ? "bg-[#F1F1FE]"
-                                    : "bg-white"
+                                    : "hover:bg-[#E6E8FF]"
                                 }`}
                         >
                             {filter}

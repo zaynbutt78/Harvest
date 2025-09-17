@@ -123,14 +123,14 @@ const LineChart = () => {
 
   return (
     <div className="bg-white p-4 rounded-xl shadow-sm w-full">
-      <div className="flex justify-between items-center mb-4">
+      <div className="flex lg:flex-row flex-col justify-between items-center mb-4">
         <p className="text-md font-semibold">Threshold Change Requests</p>
-        <div className="flex gap-2">
+        <div className="flex gap-2 overflow-x-auto">
           {filterConfigs.map((config, index) => (
             <button
               key={config.label}
               onClick={() => setActiveIndex(index)}
-              className={`text-sm px-4 py-2.5 rounded-8 font-regular transition ${
+              className={`text-sm px-4 py-2.5 rounded-8 font-regular transition whitespace-nowrap cursor-pointer ${
                 activeIndex === index
                   ? "bg-[#E6E8FF]"
                   : "hover:bg-[#E6E8FF]"
